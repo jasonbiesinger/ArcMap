@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
-
-  
-
-  
   
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Snowpack Viewer</title>
+<h1> Snowpack Viewer </h1>
+<p> Jason Biesinger
+<br> 2/12/2018 </p>
 
 <style>
 body{background-color: lightblue}
 p{text-align: center;color: black;}
 h1{text-align: center;color: black;}
-
   html, body, #viewDiv {
   padding: 0;
   margin: 0;
@@ -38,7 +36,9 @@ require([
   });
   var view = new MapView({
     container: "viewDiv",
-    map: map              
+    map: map,         
+    zoom: 7,
+    center: [248, 39]
   });
 });
 </script>
